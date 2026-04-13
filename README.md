@@ -1,3 +1,4 @@
-Sample Account /n
-Usernname: test
-Password: test
+##Sample Account
+
+**Username:** `test`  
+**Password:** `test`
