@@ -1,0 +1,43 @@
+.auth-form {
+  width: 360px;
+  margin: 80px auto;
+  padding: 32px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+  .form-field input {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+  }
+
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-link {
+  text-align: center;
+  color: #4ea3ff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+  .signup-link:hover {
+    text-decoration: underline;
+  }

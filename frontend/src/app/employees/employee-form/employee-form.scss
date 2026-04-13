@@ -1,0 +1,28 @@
+.employee-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+mat-form-field {
+  flex: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.error {
+  margin-top: 15px;
+  color: red;
+}

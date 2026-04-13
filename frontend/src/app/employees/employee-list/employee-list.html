@@ -1,0 +1,52 @@
+<div class="employee-list-container">
+
+  <h1>Employees</h1>
+
+  <button mat-raised-button color="primary" (click)="addEmployee()">
+    Add Employee
+  </button>
+
+  <div *ngIf="loading">Loading employees...</div>
+
+  <div *ngIf="error" class="error">{{ error }}</div>
+
+  <table *ngIf="!loading && employees.length > 0" class="employee-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Designation</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>Date Joined</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.first_name }} {{ emp.last_name }}</td>
+        <td>{{ emp.email }}</td>
+        <td>{{ emp.designation }}</td>
+        <td>{{ emp.department }}</td>
+        <td>${{ emp.salary }}</td>
+        <td>{{ emp.date_of_joining | date }}</td>
+
+        <td>
+          <button mat-button color="accent" (click)="viewEmployee(emp.id)">
+            View
+          </button>
+
+          <button mat-button color="primary" (click)="editEmployee(emp.id)">
+            Edit
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!loading && employees.length === 0">
+    No employees found.
+  </div>
+
+</div>

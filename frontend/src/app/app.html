@@ -1,0 +1,6 @@
+<header class="top-bar">
+  <span class="spacer"></span>
+  <button *ngIf="auth.isAuthenticated" (click)="logout()">Logout</button>
+</header>
+
+<router-outlet></router-outlet>

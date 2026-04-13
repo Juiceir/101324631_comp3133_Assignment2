@@ -1,0 +1,18 @@
+<div class="employee-detail-container" *ngIf="employee">
+
+  <h1>{{ employee.first_name }} {{ employee.last_name }}</h1>
+
+  <p><strong>Email:</strong> {{ employee.email }}</p>
+  <p><strong>Designation:</strong> {{ employee.designation }}</p>
+  <p><strong>Department:</strong> {{ employee.department }}</p>
+  <p><strong>Salary:</strong> ${{ employee.salary }}</p>
+  <p><strong>Date Joined:</strong> {{ employee.date_of_joining | date }}</p>
+  <p><strong>Gender:</strong> {{ employee.gender }}</p>
+
+  <button mat-raised-button color="primary" (click)="edit()">
+    Edit Employee
+  </button>
+
+</div>
+
+<div *ngIf="error" class="error">{{ error }}</div>

@@ -1,0 +1,22 @@
+.detail-card {
+  width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+  .detail-card h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .detail-card p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+button {
+  margin-top: 20px;
+}
